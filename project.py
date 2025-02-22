@@ -14,8 +14,46 @@ st.markdown(
     """
     <style>
     .stApp {
-        background-color: rgb(87, 87, 238);
-        color: rgb(252, 252, 252);
+        background: linear-gradient(to right, #4A00E0, #8E2DE2);
+        color: white;
+        font-family: 'Arial', sans-serif;
+    }
+    
+    .stMarkdown, .stText {
+        font-size: 18px;
+    }
+
+    .css-1d391kg {
+        background-color: rgba(255, 255, 255, 0.1);
+        padding: 15px;
+        border-radius: 10px;
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .stButton>button {
+        background-color: #ff7e5f;
+        color: white;
+        border-radius: 8px;
+        font-size: 16px;
+        padding: 10px;
+    }
+
+    .stButton>button:hover {
+        background-color: #feb47b;
+        transition: 0.3s;
+    }
+
+    .stDownloadButton>button {
+        background-color: #06beb6;
+        color: white;
+        border-radius: 8px;
+        font-size: 16px;
+        padding: 10px;
+    }
+
+    .stDownloadButton>button:hover {
+        background-color: #48b1bf;
+        transition: 0.3s;
     }
     </style>
     """,
