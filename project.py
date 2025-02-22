@@ -9,7 +9,7 @@ st.set_page_config(page_title="Data Shredder", page_icon="📊", layout="wide", 
 st.title("Data Sweeper – Simplify Your Data Cleaning | By Anas Mehmood")
 st.write("Easily refine your data with our cleaning tool! Simply upload your file and utilize our features to optimize and perfect your information.")
 
-# Custom CSS
+# Styling
 st.markdown(
     """
     <style>
@@ -20,49 +20,63 @@ st.markdown(
         font-family: 'Arial', sans-serif;
         padding: 20px;
     }
-
-    /* Box styling for text and sections */
-    .stMarkdown, .stText, .stDataFrame {
-        background: rgba(255, 255, 255, 0.1);
-        padding: 15px;
-        border-radius: 10px;
-        border: 1px solid rgba(255, 255, 255, 0.3);
-        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
-        margin-bottom: 15px;
+    
+    /* General text styling */
+    .stMarkdown, .stText {
+        font-size: 18px;
+        line-height: 1.6;
     }
 
-    /* Button styling */
+    /* Styling for sections (cards effect) */
+    .css-1d391kg {
+        background: rgba(255, 255, 255, 0.12);
+        padding: 20px;
+        border-radius: 12px;
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        box-shadow: 3px 3px 12px rgba(0, 0, 0, 0.15);
+        margin-bottom: 20px;
+        transition: all 0.3s ease-in-out;
+    }
+
+    /* Smooth hover effect for sections */
+    .css-1d391kg:hover {
+        background: rgba(255, 255, 255, 0.2);
+        transform: translateY(-3px);
+    }
+
+    /* Stylish buttons */
     .stButton>button {
-        background-color: #ff7e5f;
+        background: linear-gradient(135deg, #ff7e5f, #ff6a88);
         color: white;
         border-radius: 8px;
         font-size: 16px;
-        padding: 10px;
+        padding: 12px;
         border: none;
-        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+        box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+        transition: all 0.3s ease-in-out;
     }
 
     .stButton>button:hover {
-        background-color: #feb47b;
-        transition: 0.3s;
+        background: linear-gradient(135deg, #feb47b, #ff7e5f);
+        transform: scale(1.05);
     }
 
-    /* Download button */
+    /* Download button styling */
     .stDownloadButton>button {
-        background-color: #06beb6;
+        background: linear-gradient(135deg, #06beb6, #48b1bf);
         color: white;
         border-radius: 8px;
         font-size: 16px;
-        padding: 10px;
+        padding: 12px;
         border: none;
-        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+        box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+        transition: all 0.3s ease-in-out;
     }
 
     .stDownloadButton>button:hover {
-        background-color: #48b1bf;
-        transition: 0.3s;
+        background: linear-gradient(135deg, #48b1bf, #06beb6);
+        transform: scale(1.05);
     }
-
     </style>
     """,
     unsafe_allow_html=True,
