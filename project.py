@@ -78,7 +78,7 @@ st.markdown(
 )
 
 # Add an image (e.g., a logo or banner)
-st.image("c:\Users\HP\Downloads\DALL·E 2025-02-22 16.41.51 - A modern and sleek digital design for 'Data Sweeper' featuring a futuristic, clean interface. The background has a gradient of blue and purple hues, s.webp", use_column_width=True)
+st.image("https://www.google.com/imgres?q=data%20sweeping%20image&imgurl=https%3A%2F%2Fp3adaptive.com%2Fwp-content%2Fuploads%2F2024%2F05%2FWhat-is-the-difference-between-data-cleaning-and-data-cleansing.jpeg&imgrefurl=https%3A%2F%2Fp3adaptive.com%2Fwhat-is-the-difference-between-data-cleaning-and-data-cleansing%2F&docid=AqOhZWYQenC-pM&tbnid=WLURJVJnpFi-rM&vet=12ahUKEwidmcq_mteLAxUGgf0HHX_MHzs4ChAzegQIVxAA..i&w=733&h=489&hcb=2&ved=2ahUKEwidmcq_mteLAxUGgf0HHX_MHzs4ChAzegQIVxAA", use_column_width=True)
 
 
 # Upload file
