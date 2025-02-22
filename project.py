@@ -63,23 +63,10 @@ st.markdown(
         transition: 0.3s;
     }
 
-    /* Image styling */
-    .header-image {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        width: 50%;
-        border-radius: 10px;
-        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
-    }
     </style>
     """,
     unsafe_allow_html=True,
 )
-
-# Add an image (e.g., a logo or banner)
-st.image("https://www.google.com/imgres?q=data%20sweeping%20image&imgurl=https%3A%2F%2Fp3adaptive.com%2Fwp-content%2Fuploads%2F2024%2F05%2FWhat-is-the-difference-between-data-cleaning-and-data-cleansing.jpeg&imgrefurl=https%3A%2F%2Fp3adaptive.com%2Fwhat-is-the-difference-between-data-cleaning-and-data-cleansing%2F&docid=AqOhZWYQenC-pM&tbnid=WLURJVJnpFi-rM&vet=12ahUKEwidmcq_mteLAxUGgf0HHX_MHzs4ChAzegQIVxAA..i&w=733&h=489&hcb=2&ved=2ahUKEwidmcq_mteLAxUGgf0HHX_MHzs4ChAzegQIVxAA", use_column_width=True)
-
 
 # Upload file
 uploaded_files = st.file_uploader("Upload a file (accepts CSV & Excel): ", type=["csv", "xlsx"], accept_multiple_files=True)
