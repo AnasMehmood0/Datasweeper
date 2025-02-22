@@ -13,29 +13,33 @@ st.write("Easily refine your data with our cleaning tool! Simply upload your fil
 st.markdown(
     """
     <style>
+    /* Gradient background */
     .stApp {
         background: linear-gradient(to right, #4A00E0, #8E2DE2);
         color: white;
         font-family: 'Arial', sans-serif;
-    }
-    
-    .stMarkdown, .stText {
-        font-size: 18px;
+        padding: 20px;
     }
 
-    .css-1d391kg {
-        background-color: rgba(255, 255, 255, 0.1);
+    /* Box styling for text and sections */
+    .stMarkdown, .stText, .stDataFrame {
+        background: rgba(255, 255, 255, 0.1);
         padding: 15px;
         border-radius: 10px;
+        border: 1px solid rgba(255, 255, 255, 0.3);
         box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+        margin-bottom: 15px;
     }
 
+    /* Button styling */
     .stButton>button {
         background-color: #ff7e5f;
         color: white;
         border-radius: 8px;
         font-size: 16px;
         padding: 10px;
+        border: none;
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
     }
 
     .stButton>button:hover {
@@ -43,22 +47,39 @@ st.markdown(
         transition: 0.3s;
     }
 
+    /* Download button */
     .stDownloadButton>button {
         background-color: #06beb6;
         color: white;
         border-radius: 8px;
         font-size: 16px;
         padding: 10px;
+        border: none;
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
     }
 
     .stDownloadButton>button:hover {
         background-color: #48b1bf;
         transition: 0.3s;
     }
+
+    /* Image styling */
+    .header-image {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+        border-radius: 10px;
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+    }
     </style>
     """,
     unsafe_allow_html=True,
 )
+
+# Add an image (e.g., a logo or banner)
+st.image("c:\Users\HP\Downloads\DALL·E 2025-02-22 16.41.51 - A modern and sleek digital design for 'Data Sweeper' featuring a futuristic, clean interface. The background has a gradient of blue and purple hues, s.webp", use_column_width=True)
+
 
 # Upload file
 uploaded_files = st.file_uploader("Upload a file (accepts CSV & Excel): ", type=["csv", "xlsx"], accept_multiple_files=True)
